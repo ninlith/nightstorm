@@ -1497,14 +1497,12 @@
 			"scope": "variable",
 			"settings": {
 				"foreground": "#BCBEC3",
-				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "entity.name.variable",
 			"settings": {
 				"foreground": "#BCBEC3",
-				"fontStyle": "italic"
 			}
 		},
 		{
