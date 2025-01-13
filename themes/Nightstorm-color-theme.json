@@ -916,7 +916,6 @@
 			"scope": [
 				"entity.name.type.module",
 				"entity.name.constant",
-				"variable.other.object",
 				"variable.other.property",
 				"variable.other.object.property",
 				"variable.other.constant.property",
@@ -1587,6 +1586,7 @@
 			"scope": [
 				"variable.other.constant",
 				"meta.definition variable.other.constant",
+				"variable.other.object",
 				"variable.other.object.js",
 				"variable.other.php",
 				"constant.other.php"
