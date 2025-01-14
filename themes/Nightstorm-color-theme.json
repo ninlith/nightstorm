@@ -868,17 +868,6 @@
 				"constant.character.enum.graphql",
 				"source.yaml constant.language.boolean",
 
-                // function/method calls
-                "meta.function-call.generic",
-                "meta.function-call entity.name.function",
-                "meta.function-call support.type",
-                "meta.method-call entity.name.function",
-                "entity.name.function.call",
-                "entity.name.function.member",
-                "support.function",
-                "support.function.construct.php",
-                "support.function.construct.output.php",
-
                 // punctuation
 				"punctuation.accessor",
 				"punctuation.definition.entity",
@@ -962,13 +951,13 @@
 		},
 		{  // MARK: orange
 			"scope": [
+                "token.warn-token",
 				"keyword",
 				"keyword.operator.logical",
 				"keyword.operator.new",
 				"keyword.operator.expression",
                 "keyword - keyword.operator",
                 "keyword.control",
-				"keyword.other.unit",
                 "storage",
 				"storage.type",
 				"constant.character.escape",
@@ -995,9 +984,55 @@
 				"fontStyle": ""
 			}
 		},
-		{  // MARK: bright yellow
+        {  // MARK: bright yellow
 			"scope": [
-                "token.warn-token",
+                "constant.numeric",
+                // "constant.other.color.rgb-value.hex.css",
+			],
+			"settings": {
+				"foreground": "#D5B778"
+			}
+		},
+        {  // MARK: bright green
+			"scope": [
+				"string",
+				"punctuation.definition.metadata.markdown",
+				"markup.inline.raw",
+				"markup.quote",
+				"punctuation.separator.key-value.html",
+				"constant.other.character-class.set.regexp",
+				"constant.other.character-class.range.regexp",
+				"meta.at-rule.each keyword.control.operator",
+				"meta.attribute-selector",
+                "meta.embedded.assembly",
+				"meta.tag.attributes keyword.operator.assignment",
+				"keyword.other.unit",
+			],
+			"settings": {
+				"foreground": "#6AAB73"
+			}
+		},
+        {  // MARK: cyan
+			"scope": [
+                "support.type",
+			],
+			"settings": {
+				"foreground": "#098684"
+			}
+		},
+		{  // MARK: bright cyan
+			"scope": [
+                // functions/methods
+                "meta.function-call.generic",
+                "meta.function-call entity.name.function",
+                "meta.function-call support.type",
+                "meta.method-call entity.name.function",
+                "entity.name.function.call",
+                "entity.name.function.member",
+                "support.function",
+                "support.function.construct.php",
+                "support.function.construct.output.php",
+
 				"variable.parameter.misc.css",
 				"variable.parameter.keyframe-list.css",
 				"entity.name.tag",
@@ -1030,42 +1065,7 @@
 				"meta.decorator entity.name.function",
 				"constant.other.character-class.regexp",
 				"meta.attribute.php",
-				"keyword.operator.nulltype.graphql"
-			],
-			"settings": {
-				"foreground": "#D5B778"
-			}
-		},
-        {  // MARK: bright green
-			"scope": [
-				"string",
-				"punctuation.definition.metadata.markdown",
-				"markup.inline.raw",
-				"markup.quote",
-				"punctuation.separator.key-value.html",
-				"source.css support.constant",
-				"constant.other.character-class.set.regexp",
-				"constant.other.character-class.range.regexp",
-				"meta.at-rule.each keyword.control.operator",
-				"meta.attribute-selector",
-                "meta.embedded.assembly",
-				"meta.tag.attributes keyword.operator.assignment"
-			],
-			"settings": {
-				"foreground": "#6AAB73"
-			}
-		},
-		{  // MARK: bright cyan
-			"scope": [
-				"constant.numeric",
-			],
-			"settings": {
-				"foreground": "#2AACB8"
-			}
-		},
-		{ // MARK: cyan
-			"scope": [
-                "support.type",
+				"keyword.operator.nulltype.graphql",
 				"keyword.operator.quantifier.regexp",
 				"string.regexp punctuation.definition.string",
 				"string.regexp keyword.other",
@@ -1076,9 +1076,10 @@
 				"source.vue meta.tag.other.unrecognized.html.derivative entity.name.tag",
 				"source.vue meta.tag.custom.start.html entity.name.tag",
 				"source.vue meta.tag.custom.end.html entity.name.tag"
-			],
+            ],
 			"settings": {
-				"foreground": "#0DA19E"
+				"foreground": "#2AACB8",
+                "fontStyle": ""
 			}
 		},
         {  // MARK: bright blue
@@ -1088,7 +1089,6 @@
                 "entity.name.function",
                 "entity.name.type.class",
                 "support.function.magic",
-                "constant.other.color.rgb-value",
                 "function.deprecated",
                 "string.other.link.description.title.markdown",
                 "entity.name.function.decorator",
@@ -1129,6 +1129,7 @@
 				"variable.language.this.js",
 				"variable.language.this.php",
                 "variable.language.self.ruby",
+				"source.css support.constant",
 			],
 			"settings": {
 				"foreground": "#9995D9"
@@ -1172,7 +1173,7 @@
 				"fontStyle": "italic"
 			}
 		},
-		{  // MARK: red
+		{  // MARK: bright red
 			"scope": [
                 "token.error-token",
                 "invalid",
@@ -1180,7 +1181,7 @@
                 "keyword.codetag.notation",
             ],
 			"settings": {
-				"foreground": "#C65E54"
+				"foreground": "#CA685F",
 			}
 		},
         {  // MARK: --
@@ -1257,22 +1258,22 @@
             "fontStyle": ""
         },
         "function": {
-            "foreground": "#BCBEC3",
+            "foreground": "#2AACB8",
         },
         "method": {
-            "foreground": "#BCBEC3",
+            "foreground": "#2AACB8",
         },
         "class": {
             "foreground": "#BCBEC3"
         },
         "function.builtin": {
-            "foreground": "#BCBEC3",
+            "foreground": "#2AACB8",
         },
         "class.builtin": {
             "foreground": "#BCBEC3",
         },
         "function.defaultLibrary": {
-            "foreground": "#BCBEC3",
+            "foreground": "#2AACB8",
         },
         "class.defaultLibrary": {
             "foreground": "#BCBEC3",
@@ -1296,13 +1297,13 @@
             "foreground": "#56A8F5",
         },
         "class.typeHint": {
-            "foreground": "#0DA19E",
+            "foreground": "#098684",
         },
         "typeParameter": {
-            "foreground": "#0DA19E"
+            "foreground": "#098684"
         },
         "type": {
-            "foreground": "#0DA19E",
+            "foreground": "#098684",
             "fontStyle": ""
         },
         "interface": {
