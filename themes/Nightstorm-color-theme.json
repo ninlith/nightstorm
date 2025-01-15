@@ -977,6 +977,15 @@
 		},
 		{  // MARK: yellow
 			"scope": [
+                "meta.tag.other.unrecognized.html.derivative punctuation.definition.tag",
+                "meta.tag.other.unrecognized.html.derivative entity.name.tag",
+            ],
+			"settings": {
+				"foreground": "#D5B778",
+			}
+		},
+		{
+			"scope": [
                 "keyword.codetag.notation",
             ],
 			"settings": {
