@@ -840,15 +840,7 @@
 		//"window.activeBorder": null,
 		//"window.inactiveBorder": null
 	},
-	"tokenColors": [
-		{  // MARK: bright white
-			"scope": [
-                "ref.matchtext",
-            ],
-			"settings": {
-				"foreground": "#FFFFFF",
-			}
-		},
+	"tokenColors": [  // TextMate rules
         {  // MARK: white
 			"scope": [
                 // variables
@@ -983,21 +975,18 @@
 				"fontStyle": ""
 			}
 		},
-        {  // MARK: bright yellow
+		{  // MARK: yellow
 			"scope": [
-                "constant.numeric",
-                "constant.other.color.rgb-value.hex.css",
-				"keyword.other.unit",
-			],
+                "keyword.codetag.notation",
+            ],
 			"settings": {
-				"foreground": "#3ec2a1"
+				"foreground": "#D5B778",
+				"fontStyle": "bold",
 			}
 		},
-        {  // MARK: bright green
+        {  // MARK: green
 			"scope": [
 				"string",
-                // "constant.numeric",
-                // "constant.other.color.rgb-value.hex.css",
  				"punctuation.definition.metadata.markdown",
 				"markup.inline.raw",
 				"markup.quote",
@@ -1013,7 +1002,17 @@
 				"foreground": "#6AAB73"
 			}
 		},
-		{  // MARK: bright cyan
+        {  // MARK: greenish cyan
+			"scope": [
+                "constant.numeric",
+                "constant.other.color.rgb-value.hex.css",
+				"keyword.other.unit",
+			],
+			"settings": {
+				"foreground": "#3EC2A1"
+			}
+		},
+		{  // MARK: cyan
 			"scope": [
                 // functions/methods
                 "meta.function-call.generic",
@@ -1075,7 +1074,7 @@
                 "fontStyle": ""
 			}
 		},
-        {  // MARK: bright blue
+        {  // MARK: blue
 			"scope": [
                 "token.info-token",
                 "entity.name.class",
@@ -1112,7 +1111,7 @@
 				"fontStyle": "underline"
 			}
 		},
-		{  // MARK: magenta
+		{  // MARK: purply blue
 			"scope": [
 				"variable.language.special.self",
 				"variable.parameter.function.language.special.self",
@@ -1128,7 +1127,7 @@
 				"foreground": "#9995D9"
 			}
 		},
-        {  // MARK: bright magenta
+        {  // MARK: magenta
 			"scope": [
                 "token.debug-token",
 				"entity.name.type.module",
@@ -1170,21 +1169,13 @@
 			"scope": [
                 "support.type",
 				"storage.type.php",
-            ],
-			"settings": {
-				"foreground": "#CA685F",
-			}
-		},
-		{  // MARK: bright red
-			"scope": [
+
                 "token.error-token",
                 "invalid",
                 "invalid.deprecated",
-                "keyword.codetag.notation",
             ],
 			"settings": {
-				"foreground": "#f66",
-				"fontStyle": "bold"
+				"foreground": "#CA685F",
 			}
 		},
         {  // MARK: --
