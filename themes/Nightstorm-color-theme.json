@@ -903,14 +903,12 @@
                 "entity.name.function.support.go",
 				"entity.name.type.go",
 				"punctuation.other.comma.go",
-				"storage.type.php",
 				"meta.arguments.graphql",
 				"meta.arguments.graphql",
 				"support.type.graphql",
 				"meta.brace.round.graphql",
 				"string.unquoted.alias.graphql",
 				"support.type.builtin.graphql",
-
             ],
 			"settings": {
 				"foreground": "#BCBEC4"
@@ -951,6 +949,7 @@
 		},
 		{  // MARK: orange
 			"scope": [
+
                 "token.warn-token",
 				"keyword",
 				"keyword.operator.logical",
@@ -987,16 +986,19 @@
         {  // MARK: bright yellow
 			"scope": [
                 "constant.numeric",
-                // "constant.other.color.rgb-value.hex.css",
+                "constant.other.color.rgb-value.hex.css",
+				"keyword.other.unit",
 			],
 			"settings": {
-				"foreground": "#D5B778"
+				"foreground": "#3ec2a1"
 			}
 		},
         {  // MARK: bright green
 			"scope": [
 				"string",
-				"punctuation.definition.metadata.markdown",
+                // "constant.numeric",
+                // "constant.other.color.rgb-value.hex.css",
+ 				"punctuation.definition.metadata.markdown",
 				"markup.inline.raw",
 				"markup.quote",
 				"punctuation.separator.key-value.html",
@@ -1006,18 +1008,9 @@
 				"meta.attribute-selector",
                 "meta.embedded.assembly",
 				"meta.tag.attributes keyword.operator.assignment",
-				"keyword.other.unit",
 			],
 			"settings": {
 				"foreground": "#6AAB73"
-			}
-		},
-        {  // MARK: cyan
-			"scope": [
-                "support.type",
-			],
-			"settings": {
-				"foreground": "#098684"
 			}
 		},
 		{  // MARK: bright cyan
@@ -1173,6 +1166,15 @@
 				"fontStyle": "italic"
 			}
 		},
+		{  // MARK: red
+			"scope": [
+                "support.type",
+				"storage.type.php",
+            ],
+			"settings": {
+				"foreground": "#CA685F",
+			}
+		},
 		{  // MARK: bright red
 			"scope": [
                 "token.error-token",
@@ -1181,7 +1183,8 @@
                 "keyword.codetag.notation",
             ],
 			"settings": {
-				"foreground": "#CA685F",
+				"foreground": "#f66",
+				"fontStyle": "bold"
 			}
 		},
         {  // MARK: --
@@ -1297,13 +1300,13 @@
             "foreground": "#56A8F5",
         },
         "class.typeHint": {
-            "foreground": "#098684",
+            "foreground": "#CA685F",
         },
         "typeParameter": {
-            "foreground": "#098684"
+            "foreground": "#D5B778"
         },
         "type": {
-            "foreground": "#098684",
+            "foreground": "#D5B778",
             "fontStyle": ""
         },
         "interface": {
