@@ -872,7 +872,6 @@
 				"punctuation.definition.attribute-selector",
 				"punctuation.terminator",
 				"punctuation.definition.typeparameters",
-                "punctuation.section.embedded.begin.php",
 				"punctuation.operation.graphql",
 				"punctuation.colon.graphql",
 				"punctuation.assignment.graphql",
@@ -941,7 +940,6 @@
 		},
 		{  // MARK: orange
 			"scope": [
-
                 "token.warn-token",
 				"keyword",
 				"keyword.operator.logical",
@@ -951,11 +949,10 @@
                 "keyword.control",
                 "storage",
 				"storage.type",
-				"constant.character.escape",
+				"constant.character.escape",  // /n in strings
 				"constant.language",
 				"variable.key.dotenv",
 				"entity.name.tag.yaml",
-				"constant.character.escape",
 				"punctuation.definition.markdown",
 				"punctuation.definition.raw.markdown",
 				"punctuation.definition.bold.markdown",
@@ -963,6 +960,8 @@
 				"punctuation.definition.list.begin.markdown",
 				"punctuation.definition.heading.markdown",
 				"punctuation.definition.quote.begin.markdown",
+                "punctuation.section.embedded.begin.php",  // <?php
+                "punctuation.section.embedded.end.php",  // ?>
 				"storage.type.error.go",
 				"constant.language.null.go",
 				"entity.name.function.support.builtin.go",
@@ -1018,7 +1017,7 @@
 				"keyword.other.unit",
 			],
 			"settings": {
-				"foreground": "#3EC2A1"
+				"foreground": "#2FBAA3"
 			}
 		},
 		{  // MARK: cyan
