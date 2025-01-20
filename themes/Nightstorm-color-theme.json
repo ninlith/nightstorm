@@ -1125,28 +1125,21 @@
         },
         "selfParameter": {
             "foreground": "#9995D9",
-            "fontStyle": "",
         },
         "selfParameter.declaration": {
-            "foreground": "#9995D9",
             "fontStyle": "italic",
         },
         "parameter": {
             "foreground": "#BCBEC3",
-            "fontStyle": "",
         },
         "parameter.declaration": {
             "fontStyle": "italic",
         },
         "variable": {
-            "fontStyle": "",
+            "foreground": "#BCBEC3",
         },
         "variable.defaultLibrary": {  // JS document, console
             "foreground": "#9995D9",
-        },
-        "variable.local": {
-            "foreground": "#BCBEC3",
-            "fontStyle": ""
         },
         "function": {
             "foreground": "#BCBEC3",
