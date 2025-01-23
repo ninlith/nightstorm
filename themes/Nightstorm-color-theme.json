@@ -889,8 +889,7 @@
                 "constant.character.escape",  // /n, \", \\, ... (in strings)
                 "support.other.escape.special.regexp", // regex \d (Python)
                 "constant.other.character-class.regexp",  // regex \d (JS)
-                "punctuation.definition.keyword.scss",  // SCSS: @ in @include
-                "punctuation.definition.keyword.css",  // CSS: @ in @media etc.
+                "punctuation.definition.keyword",  // @ in SCSS, CSS, BibTeX etc.
 
                 // markdown
                 "punctuation.definition.markdown",
